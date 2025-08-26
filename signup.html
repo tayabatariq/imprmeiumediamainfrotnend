@@ -34,35 +34,91 @@
     <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
   </div>
 
-  <!-- Navbar -->
-  <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
-    <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-      <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-        <h1 class="display-5 text-primary m-0">I M P E R I U M</h1>
-        <small>M E D I A - G R O U P</small>
-      </a>
-      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse py-3 navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="index.html" class="nav-item nav-link">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="service.html" class="nav-item nav-link">Services</a>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
+  <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt text-primary me-2"></i>Atrium House, 574 Manchester Rd, Bury BL9
+                    9SW</small>
+                <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>9.00 am - 9.00 pm</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small><i class="fa fa-envelope text-primary me-2"></i>info@imperiummedia.co.uk</small>
+                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>0800 009 6347</small>
+            </div>
         </div>
-        <div class="dropdown ms-2">
-          <button class="btn btn-primary btn-sm px-3 rounded-pill dropdown-toggle" type="button" id="accountDropdown" data-bs-toggle="dropdown">
-            Account
-          </button>
-          <ul class="dropdown-menu shadow">
-            <li><a class="dropdown-item" href="login.html">Login</a></li>
-            <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="display-5 text-primary m-0">I M P E R I U M</h1>
+                <small>M E D I A - G R O U P</small>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse py-3 navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">What We Do</a>
+                        <div class="dropdown-menu border-light m-0">
+                            <a href="websitedesign.html" class="dropdown-item">Website Development </a>
+                            <a href="marketingservices.html" class="dropdown-item">Marketing</a>
+                            <a href="startuprogramme.html" class="dropdown-item">Start Up Programme</a>
+                            <a href="itsupportservice.html" class="dropdown-item">IT Support</a>
+                            <a href="multilingualmarketing.html" class="dropdown-item">Multilingual Marketing</a>
+                            <a href="googlemybusiness.html" class="dropdown-item">Google My Business </a>
+
+                        </div>
+                    </div>
+                    <a href="clients.html" class="nav-item nav-link">Clients</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Companies</a>
+                        <div class="dropdown-menu border-light m-0">
+                            <a href="https://www.ahaccountant.co.uk" class="dropdown-item">AH Accountants</a>
+                            <a href="https://www.tiktok.com/@interactivebyimperium" class="dropdown-item">Interactive By
+                                Imperium</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="jobs.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Careers</a>
+                        <div class="dropdown-menu border-light m-0">
+
+                            <a href="jobs.html" class="  dropdown-item"> Join Our Team</a>
+                            <a href="https://uk.indeed.com/cmp/Imperium-Media-Group-Limited/jobs"
+                                class=" dropdown-item"> indeed</a>
+                        </div>
+
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="coursepage.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
+                        <div class="dropdown-menu border-light m-0">
+                            <!-- <a href="https://imperiummedia.co.uk/saiyanproductions" class="dropdown-item">Shopify  Trainings</a> -->
+                            <a href="coursepage.html" class="dropdown-item">Shopify Trainings</a>
+
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+               <div class="dropdown ms-2 custom-margin">
+  <button class="btn btn-primary btn-sm px-3 rounded-pill dropdown-toggle" type="button"
+      id="accountDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+      Account
+  </button>
+  <ul class="dropdown-menu shadow" aria-labelledby="accountDropdown">
+      <li><a class="dropdown-item" href="login.html">Login</a></li>
+      <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+  </ul>
+</div>
+
+
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
 
   <!-- Signup Card -->
   <div class="d-flex justify-content-center align-items-start min-vh-100">
@@ -93,18 +149,7 @@
     </div>
   </div>
 
-  <!-- OTP Modal -->
-  <div class="modal fade" id="otpModal" tabindex="-1" aria-labelledby="otpModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content p-3">
-        <h5 class="modal-title text-center mb-3" id="otpModalLabel">Verify Your Email</h5>
-        <div class="modal-body">
-          <input type="text" id="otpInput" class="form-control mb-3" placeholder="Enter OTP" required>
-          <button id="verifyOtpBtn" class="btn btn-success w-100">Verify OTP</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
 
   <!-- Footer Start -->
@@ -187,28 +232,42 @@ signupForm.addEventListener("submit", async (e) => {
   const password = document.getElementById("password").value;
   const confirmPassword = document.getElementById("confirmPassword").value;
 
-  if (password !== confirmPassword) return alert("Passwords do not match!");
-  if (password.length < 6) return alert("Password must be at least 6 characters");
+  if (password !== confirmPassword) {
+    alert("Passwords do not match!");
+    console.error("Passwords do not match!");
+    return;
+  }
+
+  if (password.length < 6) {
+    alert("Password must be at least 6 characters");
+    console.error("Password too short:", password.length);
+    return;
+  }
 
   try {
-    const res = await fetch("http://localhost:5000/api/signup", {
+    const res = await fetch("https://impremiumbackend.vercel.app/api/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, password })
     });
 
     const data = await res.json();
+    console.log("Server Response:", data); // ✅ full response console me
+
     if (res.ok) {
       alert(data.msg);
-      // redirect to otp.html and pass email via query string
+      // redirect to otp.html with email
       window.location.href = `otp.html?email=${encodeURIComponent(email)}`;
     } else {
       alert(data.msg);
+      console.error("Signup Error:", data.msg);
     }
   } catch (err) {
     alert("Error connecting to server");
+    console.error("Fetch Error:", err);
   }
 });
 </script>
+
 </body>
 </html>

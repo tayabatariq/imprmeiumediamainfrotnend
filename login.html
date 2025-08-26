@@ -259,6 +259,7 @@
   </script>
   <!-- /Brevo Conversations {/literal} -->
   <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 <script>
   const loginForm = document.getElementById("loginForm");
   const forgotPassword = document.getElementById("forgotPassword");
@@ -270,7 +271,7 @@
     const password = document.getElementById("loginPassword").value;
 
     try {
-      const res = await fetch("http://localhost:5000/api/login", {
+      const res = await fetch("https://impremiumbackend.vercel.app/api/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password })
@@ -280,12 +281,10 @@
 
       if (res.ok) {
         alert("Login successful!");
-
-        // Save token + user info in localStorage
-        localStorage.setItem("token", data.token);
+        // Yahan pe user ka data localStorage me save kar sakti ho future use ke liye
         localStorage.setItem("user", JSON.stringify(data.user));
 
-        // Redirect to dashboard
+        // Dashboard page pe bhej do
         window.location.href = "dashboard.html";
       } else {
         alert(data.msg || "Invalid email or password. Please try again.");
@@ -306,8 +305,11 @@
       return;
     }
 
+    // Abhi ke liye simple alert show karenge
     alert("Password reset feature abhi backend me add karna hoga. Please contact support.");
   });
+  localStorage.setItem("user", JSON.stringify(data.user));
+
 </script>
 
 
